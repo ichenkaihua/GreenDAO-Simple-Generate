@@ -63,6 +63,6 @@ GreenDAOSimpleGenerate运用java注解和反射简化似Greendao更简单生成
 
 执行后,可以看到如下输出
 
-![image](GreenDAO-Simple-Generate/raw/master/screenshot/greendao-generat-export.png  "image")
+![image](GreenDAO-Simple-Generate/tree/master/screenshot/greendao-generat-export.png  "image")
 
 
