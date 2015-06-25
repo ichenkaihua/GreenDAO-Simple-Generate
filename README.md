@@ -2,14 +2,14 @@
 GreenDAOSimpleGenerate运用java注解和反射简化似Greendao更简单生成
 
 ####配置
->目前项目jar包还没有上传至仓库中心，因此提供jar包，[jar包下载](https://github.com/ichenkaihua/GreenDAO-Simple-Generate/tree/master/extra-jar/greendao-generate-0.0.2-SNAPSHOT.jar)  <br>
+>目前项目jar包还没有上传至仓库中心，因此提供jar包，ja包路径在GreenDAO-Simple-Generate/exart-jar/greendao-generate-0.0.2-SNAPSHOT.jar  <br>
 >本项目依赖greendao-generate项目
 
 
 ####如何生成
 
   
-	    @GenerateConfig(outDir = "/home/chenkaihua/workspace/QueryScore/src/main/java",
+	@GenerateConfig(outDir = "/home/chenkaihua/workspace/QueryScore/src/main/java",
 	schemaConfig = @SchemaConfig(defaultJavaPackage = "com.dreamlienr.queryscore.dao"))
 	public class Main {
 		// 通过EntityInject注解，可以定义Entity的名字
