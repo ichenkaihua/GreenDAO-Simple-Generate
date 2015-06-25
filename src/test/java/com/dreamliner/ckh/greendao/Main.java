@@ -30,7 +30,7 @@ import com.dreamliner.greendao.service.GenerateService;
 import de.greenrobot.daogenerator.Entity;
 import de.greenrobot.daogenerator.Schema;
 
-@GenerateConfig(outDir = "/home/chenkaihua/workspace/QueryScore/src/main/java",
+@GenerateConfig(outDir = "/home/chenkaihua/workspace/QueryScore/src/main/java", 
 schemaConfig = @SchemaConfig(defaultJavaPackage = "com.dreamlienr.queryscore.dao"))
 public class Main {
 	// 通过EntityInject注解，可以定义Entity的名字
@@ -48,7 +48,7 @@ public class Main {
 
 	}
 
-	//可以注入多个Entity
+	// 可以注入多个Entity
 	private void createMulitEntity(@EntityInject("Order") Entity order,
 			@EntityInject("Photo") Entity photo) {
 		order.addIdProperty();
@@ -72,6 +72,7 @@ public class Main {
 		Entity cat = schema.addEntity("Cat");
 		cat.addIdProperty();
 		cat.addStringProperty("name");
+		
 	}
 
 	public static void main(String[] args) {

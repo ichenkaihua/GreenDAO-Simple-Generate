@@ -65,4 +65,12 @@ GreenDAOSimpleGenerate运用java注解和反射简化似Greendao更简单生成
 
 ![image](https://raw.githubusercontent.com/ichenkaihua/GreenDAO-Simple-Generate/master/screenshot/greendao-generat-export.png "image")
 
+**详细介绍**:[我的博客](http://www.chenkaihua.com/greendaosimplegenerate%E5%8F%91%E5%B8%83%E5%88%B0github%E5%95%A6.html) 
+
+qq: 954822984@qq.com
+email: admin@chenkaihua.com
+blog:[陈开华的博客](http://www.chenkaihua.com) 
+
+
+
 
