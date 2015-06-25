@@ -2,11 +2,11 @@
 GreenDAOSimpleGenerate运用java注解和反射简化似Greendao更简单生成
 
 ####配置
->目前项目jar包还没有上传至仓库中心，因此提供jar包，点我下载
->本项目依赖greendao-generate这个项目
+>目前项目jar包还没有上传至仓库中心，因此提供jar包，[jar包下载](https://github.com/ichenkaihua/GreenDAO-Simple-Generate/extra-lib/https://github.com/ichenkaihua/GreenDAO-Simple-Generate/blob/master/extra-jar/greendao-generate-0.0.2-SNAPSHOT.jar)   <br>
+>本项目依赖greendao-generate项目
 
 
-
+####如何生成
 
   
 	    @GenerateConfig(outDir = "/home/chenkaihua/workspace/QueryScore/src/main/java",
@@ -58,6 +58,11 @@ GreenDAOSimpleGenerate运用java注解和反射简化似Greendao更简单生成
 		}
 	
 	}
+
+
+
+执行后,可以看到如下输出
+
 
 
 
