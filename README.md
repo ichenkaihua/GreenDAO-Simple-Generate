@@ -1,6 +1,12 @@
 #GreeDAO-Simple-Generate
 GreenDAOSimpleGenerate运用java注解和反射简化似Greendao更简单生成
 
+####感谢
+GreenDAO是一个轻量级快速开发的ORM解决方案，提供java对象与sqlite数据库之间的映射，请前往[greenDAO](https://github.com/greenrobot/greenDAO) 了解更多
+
+
+
+
 ####配置
 >目前项目jar包还没有上传至仓库中心，因此提供jar包，ja包路径在GreenDAO-Simple-Generate/exart-jar/greendao-generate-0.0.2-SNAPSHOT.jar  <br>
 >本项目依赖greendao-generate项目
@@ -67,7 +73,7 @@ GreenDAOSimpleGenerate运用java注解和反射简化似Greendao更简单生成
 
 **详细介绍**:[我的博客](http://www.chenkaihua.com/greendaosimplegenerate%E5%8F%91%E5%B8%83%E5%88%B0github%E5%95%A6.html) 
 
-qq: 954822984@qq.com <br>
+qq: 954822984 <br>
 email: admin@chenkaihua.com <br>
 blog:[陈开华的博客](http://www.chenkaihua.com) 
 
