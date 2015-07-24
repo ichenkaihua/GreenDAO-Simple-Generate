@@ -33,7 +33,7 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:git:git@github.ichenkaihua/GreenDAO-Simple-Generate.git</connection>
+    <connection>scm:git:git@github.com.ichenkaihua/GreenDAO-Simple-Generate.git</connection>
     <developerConnection>scm:git:git@github.ichenkaihua/GreenDAO-Simple-Generate.git</developerConnection>
     <url>git@github.com:ichenkaihua/GreenDAO-Simple-Generate.git</url>
   </scm>
