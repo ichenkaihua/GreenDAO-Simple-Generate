@@ -25,12 +25,9 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-/**
- * 
- * @ClassName GenerateConfig
+/** 配置信息
  * @author chenkaihua
- * @date 2015年5月13日下午8:30:08
- * @email admin@chenkaihua.com
+ *
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

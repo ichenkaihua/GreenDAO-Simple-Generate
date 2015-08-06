@@ -20,6 +20,9 @@
 
 package com.dreamliner.ckh.greendao;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import com.dreamliner.greendao.annotation.EntityInject;
 import com.dreamliner.greendao.annotation.GenerateConfig;
 import com.dreamliner.greendao.annotation.SchemaConfig;

@@ -20,12 +20,9 @@
 
 package com.dreamliner.greendao.pojo;
 
-/**
- * 
- * @ClassName SchemaInfo
+/**数据库信息
  * @author chenkaihua
- * @date 2015年5月13日下午8:54:00
- * @email admin@chenkaihua.com
+ *
  */
 public class SchemaInfo {
 
@@ -56,10 +53,7 @@ public class SchemaInfo {
 		this.enableActiveEntitiesByDefault = enableActiveEntitiesByDefault;
 	}
 
-	/**
-	 * 
-	 * @param defaultJavaPackage
-	 */
+
 	public SchemaInfo(String defaultJavaPackage) {
 		super();
 		this.defaultJavaPackage = defaultJavaPackage;

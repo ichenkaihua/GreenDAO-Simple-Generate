@@ -43,16 +43,13 @@ public class GenerateService {
 
 	/**
 	 * 构造一个greendaoService，生成greendao时将会根据传入的Class读取注解和方法
-	 * @param classesz 
+	 * @param classesz 带有注解信息的类
 	 */
 	public GenerateService(Class<?> classesz) {
 		this.classesz = classesz;
 	}
 
-	/**
-	 *   生成greendao的核心方法，这个方法将会用反射读取类注解获取{@link #GenerateInfo} 
-	 *   之后遍历所有方法，根据方法注解定义生成greendao
-	 */
+
 	public void generate() {
 		if (classesz == null) {
 			System.out.println("构造传入的Classes不能为空!");

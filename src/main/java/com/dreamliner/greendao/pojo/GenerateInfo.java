@@ -20,18 +20,11 @@
 
 package com.dreamliner.greendao.pojo;
 
-/**
- * 
- * @ClassName GenerateInfo
+/**代表生成信息
  * @author chenkaihua
- * @date 2015年5月13日下午8:53:48
- * @email admin@chenkaihua.com
+ *
  */
 public class GenerateInfo {
-	/**
-	 * 重写 toString
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
 		return "GenerateInfo [outDir=" + outDir + ", outDirTest=" + outDirTest
@@ -42,17 +35,14 @@ public class GenerateInfo {
 
 	String outDirTest;
 
-	/**
-	 *  
-	 */
 	public GenerateInfo() {
 	}
 
 	/**
-	 * 
-	 * @param outDir
-	 * @param outDirTest
-	 * @param schemaInfo
+	 * 构造一个生成信息
+	 * @param outDir 输出路径
+	 * @param outDirTest 测试文件输出路径
+	 * @param schemaInfo 数据库信息
 	 */
 	public GenerateInfo(String outDir, String outDirTest, SchemaInfo schemaInfo) {
 		super();
