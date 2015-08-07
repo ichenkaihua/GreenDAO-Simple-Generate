@@ -7,13 +7,43 @@ GreenDAO是一个轻量级快速开发的ORM解决方案，提供java对象与sq
 
 
 
-####配置
->目前项目jar包还没有上传至仓库中心，因此提供jar包，ja包路径在GreenDAO-Simple-Generate/exart-jar/greendao-generate-0.0.2-SNAPSHOT.jar  <br>
->本项目依赖greendao-generate项目
+####引入
 
 
-####如何生成
+>maven环境  (eclipse ide--> 新建maven工程-->编辑pom.xml文件，添加如下依赖)
 
+	<dependencies>
+	    <dependency>
+	        <groupId>com.github.ichenkaihua</groupId>
+	        <artifactId>greendao-generate</artifactId>
+	        <version>0.0.1-SNAPSHOT</version>
+	    </dependency>
+	</dependencies><repositories>
+	    <repository>
+	        <id>oss-sonatype</id>
+	        <name>oss-sonatype</name>
+	         <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+	        <snapshots>
+	            <enabled>true</enabled>
+	        </snapshots>
+	    </repository>
+	</repositories>
+
+>gradle 环境 (android studio --> new Module --> java module-->编辑build.gradle, 如下配置)
+
+	dependencies {
+	    compile fileTree(dir: 'libs', include: ['*.jar'])
+	    compile 'com.github.ichenkaihua:greendao-generate:0.0.1-SNAPSHOT'
+	
+	}
+	
+	repositories {
+	    maven {
+	        url 'https://oss.sonatype.org/content/repositories/snapshots'
+	    }
+
+
+####注解生成GreenDao
   
 	@GenerateConfig(outDir = "/home/chenkaihua/workspace/QueryScore/src/main/java",
 	schemaConfig = @SchemaConfig(defaultJavaPackage = "com.dreamlienr.queryscore.dao"))
@@ -70,6 +100,14 @@ GreenDAO是一个轻量级快速开发的ORM解决方案，提供java对象与sq
 执行后,可以看到如下输出
 
 ![image](https://raw.githubusercontent.com/ichenkaihua/GreenDAO-Simple-Generate/master/screenshot/greendao-generat-export.png "image")
+
+
+####发布日志
+>0.0.1-SNAPSHOT -(2015-08-07)
+>>1.支持到 de.greenrobot:greendao:1.3.7版本
+>>2.精简无用注解
+
+
 
 **详细介绍**:[我的博客](http://www.chenkaihua.com/greendaosimplegenerate%E5%8F%91%E5%B8%83%E5%88%B0github%E5%95%A6.html) 
 
