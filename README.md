@@ -104,8 +104,8 @@ GreenDAO是一个轻量级快速开发的ORM解决方案，提供java对象与sq
 
 ####发布日志
 >0.0.1-SNAPSHOT -(2015-08-07)
->>1.支持到 de.greenrobot:greendao:1.3.7版本
->>2.精简无用注解
+>>1.支持到 de.greenrobot:greendao:1.3.7版本<br>
+>>2.精简无用注解<br>
 
 
 
