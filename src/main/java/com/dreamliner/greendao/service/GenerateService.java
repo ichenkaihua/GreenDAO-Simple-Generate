@@ -58,8 +58,8 @@ public class GenerateService {
 		GenerateConfig annotation = classesz
 				.getAnnotation(GenerateConfig.class);
 		if (annotation == null) {
-			System.out.println(classesz.getName() + "没有 "
-					+ GenerateConfig.class.getName() + " 注解!");
+			System.out.println(classesz.getName() + "can not find  "
+					+ GenerateConfig.class.getName() + " annotation!");
 			return;
 		}
 		try {
@@ -130,7 +130,7 @@ public class GenerateService {
 				}
 
 			}
-
+			
 			new DaoGenerator().generateAll(schema, generateInfo.getOutDir(),
 					generateInfo.getOutDirTest());
 		} catch (InstantiationException e) {
