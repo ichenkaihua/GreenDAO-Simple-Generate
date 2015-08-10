@@ -4,7 +4,7 @@
  
  * 
 
- * @Title: EntityInject.java
+ * @Title: GenerateConfig.java
  
  * @Prject: GreenDao
  
@@ -12,38 +12,46 @@
  
  * @author: chenkaihua  
  
- * @date: 2015年5月9日 下午11:55:47
+ * @date: 2015年5月13日 下午8:30:08
  
  * @version: V1.0  
  
  */
 
-package com.dreamliner.greendao.annotation;
+package com.github.ichenkaihua.greendao.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-
-/** 注入
+/** 配置信息
  * @author chenkaihua
  *
  */
-@Target(ElementType.PARAMETER)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface EntityInject {
+public @interface GenerateConfig {
+	
+	
+	String outDir();
+	
+	
+	String outDirTest() default "";
+	
+	String outDirEntity() default "";
 	
 	
 	
-	String value();
+	SchemaConfig schemaConfig();
 	
 	
 	
-	boolean implementsSerializable() default false;
 	
 	
 	
-	String tableName() default "";
 	
+	
+	
+
 }

@@ -18,7 +18,7 @@
  
  */
 
-package com.dreamliner.greendao.pojo;
+package com.github.ichenkaihua.greendao.pojo;
 
 /**数据库信息
  * @author chenkaihua

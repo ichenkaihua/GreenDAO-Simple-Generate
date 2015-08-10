@@ -4,7 +4,7 @@
  
  * 
 
- * @Title: SchemaConfig.java
+ * @Title: EntityInject.java
  
  * @Prject: GreenDao
  
@@ -12,47 +12,38 @@
  
  * @author: chenkaihua  
  
- * @date: 2015年5月13日 下午8:28:23
+ * @date: 2015年5月9日 下午11:55:47
  
  * @version: V1.0  
  
  */
 
-package com.dreamliner.greendao.annotation;
+package com.github.ichenkaihua.greendao.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-/** schema的配置信息
+
+/** 注入
  * @author chenkaihua
  *
  */
 @Target(ElementType.PARAMETER)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface SchemaConfig {
-	
-	int version() default 1;
-	
-	boolean  enableKeepSectionsByDefault() default true;
-
-	boolean enableActiveEntitiesByDefault() default false;
-	
-	String  defaultJavaPackage();
-	
-	
-	String  defaultJavaPackageTest() default "";
-	
-	String  defaultJavaPackageDao() default "";
+public @interface EntityInject {
 	
 	
 	
+	String value();
 	
 	
 	
+	boolean implementsSerializable() default false;
 	
 	
 	
-
+	String tableName() default "";
+	
 }

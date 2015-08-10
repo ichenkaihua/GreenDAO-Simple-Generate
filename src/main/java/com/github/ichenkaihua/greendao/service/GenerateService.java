@@ -18,7 +18,7 @@
  
  */
 
-package com.dreamliner.greendao.service;
+package com.github.ichenkaihua.greendao.service;
 
 import java.io.IOException;
 import java.lang.annotation.Annotation;
@@ -27,11 +27,11 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.dreamliner.greendao.annotation.EntityInject;
-import com.dreamliner.greendao.annotation.GenerateConfig;
-import com.dreamliner.greendao.annotation.SchemaConfig;
-import com.dreamliner.greendao.pojo.GenerateInfo;
-import com.dreamliner.greendao.pojo.SchemaInfo;
+import com.github.ichenkaihua.greendao.annotation.EntityInject;
+import com.github.ichenkaihua.greendao.annotation.GenerateConfig;
+import com.github.ichenkaihua.greendao.annotation.SchemaConfig;
+import com.github.ichenkaihua.greendao.pojo.GenerateInfo;
+import com.github.ichenkaihua.greendao.pojo.SchemaInfo;
 
 import de.greenrobot.daogenerator.DaoGenerator;
 import de.greenrobot.daogenerator.Entity;
@@ -43,12 +43,13 @@ public class GenerateService {
 
 	/**
 	 * 构造一个greendaoService，生成greendao时将会根据传入的Class读取注解和方法
-	 * @param classesz 带有注解信息的类
+	 * 
+	 * @param classesz
+	 *            带有注解信息的类
 	 */
 	public GenerateService(Class<?> classesz) {
 		this.classesz = classesz;
 	}
-
 
 	public void generate() {
 		if (classesz == null) {
@@ -66,10 +67,18 @@ public class GenerateService {
 			Object obj = classesz.newInstance();
 			GenerateInfo generateInfo = parseInfo(annotation);
 			Method[] declaredMethods = classesz.getDeclaredMethods();
+			String defaultJavaPackage = generateInfo.getSchemaInfo()
+					.getDefaultJavaPackage();
+			String defaultJavaPackageDao = generateInfo.getSchemaInfo()
+					.getDefaultJavaPackageDao();
+			String defaultJavaPackageTest = generateInfo.getSchemaInfo()
+					.getDefaultJavaPackageTest();
 			Schema schema = new Schema(generateInfo.getSchemaInfo()
-					.getVersion(), generateInfo.getSchemaInfo()
-					.getDefaultJavaPackage());
-
+					.getVersion(), defaultJavaPackage);
+			if (null != defaultJavaPackageDao)
+				schema.setDefaultJavaPackageDao(defaultJavaPackageDao);
+			if (null != defaultJavaPackageTest)
+				schema.setDefaultJavaPackageTest(defaultJavaPackageTest);
 			for (Method method : declaredMethods) {
 				method.setAccessible(true);
 				boolean invoke = false;
@@ -130,26 +139,22 @@ public class GenerateService {
 				}
 
 			}
-			
+
 			new DaoGenerator().generateAll(schema, generateInfo.getOutDir(),
+					generateInfo.getOutDirEntity(),
 					generateInfo.getOutDirTest());
+
 		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (InvocationTargetException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -160,10 +165,13 @@ public class GenerateService {
 
 		String outDir = config.outDir();
 		String outDirTest = config.outDirTest();
+		String outDirEntity = config.outDirEntity();
 		generateInfo.setOutDir(outDir);
-		if(!isEmpty(outDirTest)) generateInfo.setOutDirTest(outDirTest);
-		
-		
+		if (!isEmpty(outDirTest))
+			generateInfo.setOutDirTest(outDirTest);
+		if (!isEmpty(outDirEntity))
+			generateInfo.setOutDirEntity(outDirEntity);
+
 		SchemaConfig schemaConfig = config.schemaConfig();
 		SchemaInfo schemaInfo = new SchemaInfo(
 				schemaConfig.defaultJavaPackage());
