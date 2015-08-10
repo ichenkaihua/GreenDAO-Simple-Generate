@@ -8,39 +8,27 @@ GreenDAO是一个轻量级快速开发的ORM解决方案，提供java对象与sq
 
 
 ####引入
-
+目前项目已经发布到maven仓库中心
 
 >maven环境  (eclipse ide--> 新建maven工程-->编辑pom.xml文件，添加如下依赖)
 
-	<dependencies>
-	    <dependency>
-	        <groupId>com.github.ichenkaihua</groupId>
-	        <artifactId>greendao-generate</artifactId>
-	        <version>0.0.1-SNAPSHOT</version>
-	    </dependency>
-	</dependencies><repositories>
-	    <repository>
-	        <id>oss-sonatype</id>
-	        <name>oss-sonatype</name>
-	         <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-	        <snapshots>
-	            <enabled>true</enabled>
-	        </snapshots>
-	    </repository>
-	</repositories>
+	<dependency>
+	    <groupId>com.github.ichenkaihua</groupId>
+	    <artifactId>greendao-generate</artifactId>
+	    <version>0.0.3</version>
+	</dependency>
 
 >gradle 环境 (android studio --> new Module --> java module-->编辑build.gradle, 如下配置)
 
 	dependencies {
 	    compile fileTree(dir: 'libs', include: ['*.jar'])
-	    compile 'com.github.ichenkaihua:greendao-generate:0.0.1-SNAPSHOT'
+	    compile 'com.github.ichenkaihua:greendao-generate:0.0.3'
 	
 	}
 	
 	repositories {
-	    maven {
-	        url 'https://oss.sonatype.org/content/repositories/snapshots'
-	    }
+	     mavenCentral()
+	}
 
 
 ####注解生成GreenDao
@@ -107,6 +95,16 @@ GreenDAO是一个轻量级快速开发的ORM解决方案，提供java对象与sq
 >>1.支持到 de.greenrobot:greendao:1.3.7版本<br>
 >>2.精简无用注解<br>
 
+
+>0.0.2 release (2015-08-09)
+>>1.上传至maven仓库中心
+>>2.修改包名为com.github
+
+>0.03 release (2015-08-10)
+>>1.更新支持greendao-generator2.0
+>>2.增加注解属性@schemaConfig.outDirEntity
+>>3.修复defaultJavaPackgeDao注解属性无效问题
+>>4.修复defaultJavaPackgeTest主机属性无效问题
 
 
 **详细介绍**:[我的博客](http://www.chenkaihua.com/greendaosimplegenerate%E5%8F%91%E5%B8%83%E5%88%B0github%E5%95%A6.html) 
