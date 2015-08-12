@@ -137,7 +137,7 @@ GreenDAO是一个轻量级快速开发的ORM解决方案，提供java对象与sq
 >>1.上传至maven仓库中心<br>
 >>2.修改包名为com.github<br>
 
->0.03 release (2015-08-10)
+>0.0.3 release (2015-08-10)
 >>1.更新支持greendao-generator2.0<br>
 >>2.增加注解属性@schemaConfig.outDirEntity<br>
 >>3.修复defaultJavaPackgeDao注解属性无效问题<br>
