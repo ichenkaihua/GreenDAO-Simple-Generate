@@ -144,7 +144,7 @@ GreenDAO是一个轻量级快速开发的ORM解决方案，提供java对象与sq
 >>4.修复defaultJavaPackgeTest主机属性无效问题<br>
 
 
-**详细介绍**:[我的博客](http://www.chenkaihua.com/greendaosimplegenerate%E5%8F%91%E5%B8%83%E5%88%B0github%E5%95%A6.html) 
+**详细介绍**:[我的博客](http://www.chenkaihua.com/greendao-simple-generate.html) 
 
 qq: 954822984 <br>
 email: admin@chenkaihua.com <br>
