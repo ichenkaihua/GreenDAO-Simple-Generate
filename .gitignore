@@ -4,3 +4,6 @@ target/
 *.releaseBackup
 *.versionsBackup
 release.properties
+.settings/
+.project
+.classpath
