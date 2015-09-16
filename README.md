@@ -10,7 +10,7 @@ GreenDAO是一个轻量级快速开发的ORM解决方案，提供java对象与sq
 ####引入
 目前项目已经发布到maven仓库中心
 
->maven环境  (eclipse ide--> 新建maven工程-->编辑pom.xml文件，添加如下依赖)
+* maven环境  (eclipse ide--> 新建maven工程-->编辑pom.xml文件，添加如下依赖)
 ```xml
 <dependency>
 	    <groupId>com.github.ichenkaihua</groupId>
@@ -18,15 +18,12 @@ GreenDAO是一个轻量级快速开发的ORM解决方案，提供java对象与sq
 	    <version>0.0.3</version>
 	</dependency>
 ```
-
-
->gradle 环境 (android studio --> new Module --> java module-->编辑build.gradle, 如下配置)
+* gradle 环境 (android studio --> new Module --> java module-->编辑build.gradle, 如下配置)
 ```groovy
 	dependencies {
 	    compile fileTree(dir: 'libs', include: ['*.jar'])
 	    compile 'com.github.ichenkaihua:greendao-generate:0.0.3'
 	}
-	
 	repositories {
 	     mavenCentral()
 	}
@@ -34,6 +31,7 @@ GreenDAO是一个轻量级快速开发的ORM解决方案，提供java对象与sq
 
 
 ####注解生成GreenDao
+
 ```java
 package com.dreamliner.ckh.greendao;
 	
@@ -125,15 +123,15 @@ package com.dreamliner.ckh.greendao;
 
 执行后,可以看到生成了下面这些JAVA文件
 ```groovy
-#UserDao ，对User增删改查
+// UserDao ，对User增删改查
 com.dreamlienr.queryscore.dao.UserDao
- # StudentDao,对Student增删改查
+// StudentDao,对Student增删改查
 com.dreamlienr.queryscore.dao.StudentDao
-# Student实体类，纯javaBean 
+// Student实体类，纯javaBean 
 com.dreamlienr.queryscore.entity.Student
- #OrderDao ,对Order增删改查
+ // OrderDao ,对Order增删改查
 com.dreamlienr.queryscore.dao.OrderDao
- # 
+  
 com.dreamlienr.queryscore.entity.Order
  
 com.dreamlienr.queryscore.dao.PhotoDao
@@ -147,13 +145,11 @@ com.dreamlienr.queryscore.entity.Dog
 com.dreamlienr.queryscore.dao.CatDao
  
 com.dreamlienr.queryscore.entity.Cat
- # 总接口，从这里获取DaoSettion
+ // 总接口，从这里获取DaoSettion
 com.dreamlienr.queryscore.dao.DaoMaster
- # 提供获取DAO接口
+ // 提供获取DAO接口
 com.dreamlienr.queryscore.dao.DaoSession
 ```
-
-
 ####发布日志
 >0.0.1-SNAPSHOT -(2015-08-07)
 >>1.支持到 de.greenrobot:greendao:1.3.7版本<br>
