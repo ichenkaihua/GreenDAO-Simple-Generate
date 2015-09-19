@@ -164,7 +164,7 @@ com.dreamlienr.queryscore.dao.DaoSession
 >>1.更新支持greendao-generator2.0<br>
 >>2.增加注解属性@schemaConfig.outDirEntity<br>
 >>3.修复defaultJavaPackgeDao注解属性无效问题<br>
->>4.修复defaultJavaPackgeTest主机属性无效问题<br>
+>>4.修复defaultJavaPackgeTest注解属性无效问题<br>
 
 
 **详细介绍**:[我的博客](http://www.chenkaihua.com/greendao-simple-generate.html) 
