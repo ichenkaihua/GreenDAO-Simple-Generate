@@ -16,7 +16,9 @@ import de.greenrobot.daogenerator.Schema;
 //特别注意的是，如果是android studio项目，应该这样写 app/src/main/java
 // GenerateConfig.SchemaConfig.defaultJavaPackage 生成的entity的所在包，如果没有包名或包名不完全，则greendao会自动创建
 //GenerateConfig.SchemaConfig.defaultJavaPackageDao 生成的dao类所在包，如果没有包名或包名不完全，则greendao会自动创建
-@GenerateConfig(outDir = "/home/chenkaihua/workspace/QueryScore/src/main/java", schemaConfig = @SchemaConfig(defaultJavaPackage = "com.dreamlienr.queryscore.entity", defaultJavaPackageDao = "com.dreamlienr.queryscore.dao"))
+@GenerateConfig(outDir = "/home/chenkaihua/workspace/QueryScore/src/main/java",
+		schemaConfig = @SchemaConfig(defaultJavaPackage = "com.dreamlienr.queryscore.entity",
+				defaultJavaPackageDao = "com.dreamlienr.queryscore.dao"))
 public class Main {
 
 	// 通过EntityInject注解，可以定义Entity的名字

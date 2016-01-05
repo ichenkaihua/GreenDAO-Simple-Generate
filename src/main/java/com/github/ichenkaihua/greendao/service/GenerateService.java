@@ -51,6 +51,9 @@ public class GenerateService {
 		this.classesz = classesz;
 	}
 
+	/**
+	 * 生成所有java文件
+	 */
 	public void generate() {
 		if (classesz == null) {
 			System.out.println("构造传入的Classes不能为空!");

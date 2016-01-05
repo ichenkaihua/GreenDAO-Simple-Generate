@@ -26,24 +26,33 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 
-/** 注入
+/** 注入一个Entity,必须是{@link de.greenrobot.daogenerator.Schema}类型
  * @author chenkaihua
  *
  */
 @Target(ElementType.PARAMETER)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface EntityInject {
-	
-	
-	
+
+
+	/**
+	 * java类名称
+	 * @return java类名称
+     */
 	String value();
-	
-	
-	
+
+
+	/**
+	 * 是否实现{@link java.io.Serializable}接口
+	 * @return 默认为false
+     */
 	boolean implementsSerializable() default false;
-	
-	
-	
+
+
+	/**
+	 * 表名称
+	 * @return 表名
+     */
 	String tableName() default "";
 	
 }

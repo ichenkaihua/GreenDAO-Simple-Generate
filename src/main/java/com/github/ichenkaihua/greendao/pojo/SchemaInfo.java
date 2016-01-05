@@ -21,8 +21,9 @@
 package com.github.ichenkaihua.greendao.pojo;
 
 /**数据库信息
- * @author chenkaihua
  *
+ * @author chenkaihua
+ *@see com.github.ichenkaihua.greendao.annotation.SchemaConfig
  */
 public class SchemaInfo {
 

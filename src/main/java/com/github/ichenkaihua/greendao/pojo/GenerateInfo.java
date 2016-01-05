@@ -20,7 +20,7 @@
 
 package com.github.ichenkaihua.greendao.pojo;
 
-/**代表生成信息
+/**代表生成信息，{@link com.github.ichenkaihua.greendao.annotation.GenerateConfig}的信息
  * @author chenkaihua
  *
  */

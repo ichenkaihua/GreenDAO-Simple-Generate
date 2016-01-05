@@ -34,8 +34,8 @@ import java.lang.annotation.Target;
 public @interface SchemaConfig {
 	
 	/**
-	 * version of schema
-	 * @return version of schema
+	 * 数据库版本，默认为1
+	 * @return 数据库版本
 	 */
 	int version() default 1;
 	
@@ -50,12 +50,23 @@ public @interface SchemaConfig {
 	 * @return enable active entitys by default ,default=false
 	 */
 	boolean enableActiveEntitiesByDefault() default false;
-	
+
+	/**
+	 * 默认包名
+	 * @return 默认包名
+     */
 	String  defaultJavaPackage();
-	
-	
+
+	/**
+	 * 默认test的包名
+	 * @return test的包名
+     */
 	String  defaultJavaPackageTest() default "";
-	
+
+	/**
+	 * dao类的包名
+	 * @return dao类的包名
+     */
 	String  defaultJavaPackageDao() default "";
 	
 	
