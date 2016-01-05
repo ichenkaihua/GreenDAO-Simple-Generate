@@ -36,6 +36,7 @@ release.properties
 ## File-based project format:
 *.ipr
 *.iws
+build/
 
 ## Plugin-specific files:
 
