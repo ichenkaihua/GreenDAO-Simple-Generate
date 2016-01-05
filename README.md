@@ -7,7 +7,7 @@ GreenDAO是一个轻量级快速开发的ORM解决方案，提供java对象与sq
 
 
 
-####引入
+#### 引入
 目前项目已经发布到maven仓库中心
 
 * maven环境  (eclipse ide--> 新建maven工程-->编辑pom.xml文件，添加如下依赖)
@@ -30,7 +30,7 @@ GreenDAO是一个轻量级快速开发的ORM解决方案，提供java对象与sq
 ```
 
 
-####注解生成GreenDao
+#### 注解生成GreenDao
 
 ```java
 package com.dreamliner.ckh.greendao;
@@ -150,24 +150,15 @@ com.dreamlienr.queryscore.dao.DaoMaster
  // 提供获取DAO接口
 com.dreamlienr.queryscore.dao.DaoSession
 ```
-####发布日志
->0.0.1-SNAPSHOT -(2015-08-07)
->>1.支持到 de.greenrobot:greendao:1.3.7版本<br>
->>2.精简无用注解<br>
+#### 发布日志
+##### 0.0.4 release---(2016-1-5)
 
+*  支持到 `de.greenrobot:greendao:2.1.0`版本
+* 完善注释
 
->0.0.2 release (2015-08-09)
->>1.上传至maven仓库中心<br>
->>2.修改包名为com.github<br>
+[更多日志](changelog.md)
 
->0.0.3 release (2015-08-10)
->>1.更新支持greendao-generator2.0<br>
->>2.增加注解属性@schemaConfig.outDirEntity<br>
->>3.修复defaultJavaPackgeDao注解属性无效问题<br>
->>4.修复defaultJavaPackgeTest注解属性无效问题<br>
-
-
-**详细介绍**:[我的博客](http://www.chenkaihua.com/greendao-simple-generate.html) 
+**详细介绍**:[我的博客](http://www.chenkaihua.com/2016/01/04/greendao-simple-generator-basic-usage) 
 
 qq: 954822984 <br>
 email: admin@chenkaihua.com <br>
