@@ -15,14 +15,14 @@ GreenDAO是一个轻量级快速开发的ORM解决方案，提供java对象与sq
 <dependency>
 	    <groupId>com.github.ichenkaihua</groupId>
 	    <artifactId>greendao-generate</artifactId>
-	    <version>0.0.3</version>
+	    <version>0.0.4</version>
 	</dependency>
 ```
 * gradle 环境 (android studio --> new Module --> java module-->编辑build.gradle, 如下配置)
 ```groovy
 	dependencies {
 	    compile fileTree(dir: 'libs', include: ['*.jar'])
-	    compile 'com.github.ichenkaihua:greendao-generate:0.0.3'
+	    compile 'com.github.ichenkaihua:greendao-generate:0.0.4'
 	}
 	repositories {
 	     mavenCentral()
